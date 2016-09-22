@@ -1,0 +1,52 @@
+
+body{
+  background-image: url(images/safe.jpg);
+  background-size: auto;
+  background-color: white;
+}
+
+p {
+  font-size: 30px;
+}
+
+.container{
+  background: white;
+  opacity: .8;
+  text-align: center;
+  width:800px;
+  height:600px;
+  position:static;
+  margin: auto;
+  font-size: 30px;
+  border-radius: 30px;
+}
+
+.form{
+  font-size: 30px;
+  position:relative;
+  top: 100px;
+}
+
+input[type=number]{
+  width: 60px;
+  height:30px;
+  font-size:27px;
+}
+
+input[type=submit]{
+  height: 40px;
+  width: auto;
+  font-size: 27px;
+  margin: 10px;
+}
+
+input[type=checkbox]{
+  width:30px;
+  height:auto;
+  font-size: 30px;
+}
+
+#key{
+  position: relative;
+  top:50px;
+}
