@@ -20,11 +20,19 @@ p {
   font-size: 30px;
   border-radius: 30px;
 }
+.display{
+  background:white;
+  text-align: center;
+  border-radius: 10px;
+}
 
 .form{
-  font-size: 30px;
+  font-size: 25px;
+  align-content: center;
   position:relative;
-  top: 100px;
+  bottom: -80px;
+  width: 600px;
+  left:90px;
 }
 
 input[type=number]{
@@ -41,12 +49,12 @@ input[type=submit]{
 }
 
 input[type=checkbox]{
-  width:30px;
-  height:auto;
+  width:15px;
+  height:15px;
   font-size: 30px;
 }
 
 #key{
   position: relative;
-  top:50px;
+  top:20px;
 }

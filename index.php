@@ -1,7 +1,3 @@
-<?php
-error_reporting(E_ALL);       # Report Errors, Warnings, and Notices
-ini_set('display_errors', 1); # Display errors on page (instead of a log file)
-?>
 
 <!DOCTYPE html>
 <html>
@@ -15,15 +11,20 @@ ini_set('display_errors', 1); # Display errors on page (instead of a log file)
 <body>
   <div class = "container">
     <img id="key" src="images/key.png" alt= "Password Generator" width= 250px>
+    <div class = "display">
+      Your secure password is:<br><br>
+      <?php echo $newPassword; ?>
+    </div>
   <form method = "POST" action='index.php' class = "form">
     Enter no. of words (Maximum 10)<br>
     <input type='number' name='wordcount' max="10" min="1"><br>
-    <input type='checkbox' name='symbol'> Include symbols<br>
+    Enter no. of symbols (Maximum 10)<br>
+    <input type='number' name='symbol' max="3" min ="1"><br>
     <input type='checkbox' name='number'> Include a number<br>
     <input type = 'submit' value ='Generate my password!'><br>
   </form>
   <div>
-    
+
   </div>
 </div>
 </body>
