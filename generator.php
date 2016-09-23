@@ -51,10 +51,8 @@
     }
     elseif(empty($symbolStatus)){
         //$symbolBox = trim($symbolStatus);
-        echo $symbolStatus;
+
         $newPassword= implode("",$password);
-        echo "symbol box is empty";
-        echo $symbolStatus;
     }else{
             $newPassword = "ERROR:Please enter in a valid number of symbols";
     }
