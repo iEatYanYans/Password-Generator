@@ -18,7 +18,7 @@
   <form method = "POST" action='index.php' class = "form">
     Enter no. of words (Maximum 10)<br>
     <input type='number' name='wordcount' max="10" min="1"><br>
-    Enter no. of symbols (required- Maximum 10)<br>
+    Enter no. of symbols (Maximum 10)<br>
     <input type='number' name='symbol' max="3" min ="1"><br>
     <input type='checkbox' name='number'> Include a number<br>
     <input type = 'submit' value ='Generate my password!'><br>
