@@ -32,7 +32,8 @@
       $password[]=($randNumber);
     }
       #first checks the symbol form for a number between 1 and 10
-    if($symbolStatus !== null AND $symbolStatus>0 AND $symbolStatus <= 10 AND ((int)$symbolStatus == $symbolStatus)){
+
+    if($symbolStatus != null AND $symbolStatus>0 AND $symbolStatus <= 10 AND ((int)$symbolStatus == $symbolStatus)){
       if ($symbolStatus !== "1"){
         for ($i=0; $i<$symbolStatus; $i++){
           $password[]=($symbols[$symbolRandomizer[$i]]);
@@ -44,14 +45,23 @@
         $password[]=($symbols[array_rand($symbols,1)]);
         $newPassword= implode("",$password);
       }
+      else{
+        $newPassword= implode("",$password);
+      }
     }
-    elseif((int)$symbolStatus !== $symbolStatus) {
-        $newPassword= "ERROR:Please enter in a valid number of symbols"; #prints an error message if an valid number is entered
+    elseif(empty($symbolStatus)){
+        //$symbolBox = trim($symbolStatus);
+        echo $symbolStatus;
+        $newPassword= implode("",$password);
+        echo "symbol box is empty";
+        echo $symbolStatus;
+    }else{
+            $newPassword = "ERROR:Please enter in a valid number of symbols";
     }
-    else{
-        $newPassword= "ERROR: Please enter in a valid number";
-    }
+    //else{
+      //  $newPassword= implode("",$password);
+    //}
 
   }else{
         $newPassword= "ERROR:Please enter a valid number between 0 and 10";
-    }
+  }
